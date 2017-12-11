@@ -1,4 +1,7 @@
-function! demo#test(Name)
+function! Hello() "首字母需要大写
     echom "Hello world.."
-    echom a:Name "其中a: 相当于作用域
+endfunction
+
+function! HelloName(Name)
+    echom  "[". a:Name . "] is ok !!!"
 endfunction
