@@ -293,7 +293,6 @@ map <leader>r :w<CR>:GoRun<CR>
 
 "定义,r :GoDoc 打开帮助文档
 map <leader>z :GoImports<CR>
-
 "godef gd 右边新窗口打开
 "let g:godef_split=2
 "已修改go-def源码
@@ -301,6 +300,18 @@ map <leader>z :GoImports<CR>
 "gs 新窗口打开
 "godef gd 相同页面左侧打开
 let g:godef_split=3
+" GoImplements 高度和宽度
+let g:go_term_mode = "vsplit"
+let g:go_term_height=30
+let g:go_list_height = 20
+" quickfix , locationlist
+let g:go_list_type = "locationlist"
+"定义,q 执行:GoImplements，显示当前类型实现的interface列表和实现的类情况
+map <leader>q :GoImplements<CR>
+" 用于查看通道在什么位置调用
+map <leader>s :GoChannelPeers<CR>
+let g:go_term_width=35
+
 
 
 
