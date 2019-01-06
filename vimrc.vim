@@ -313,6 +313,19 @@ map <leader>q :GoImplements<CR>
 map <leader>s :GoChannelPeers<CR>
 let g:go_term_width=35
 
+let g:go_info_mode = 'gocode'
+let g:go_def_mode = 'guru'
+let g:go_guru_scope = ['github.com/dgraph-io/dgraph/...']
+" 查看函数会用在什么地方 , 相当于grep查找
+map <leader>3 :GoReferrers<CR>
+" 注意使用以下3个命令, 必须先配置g:go_guru_scope , 且不能报错 ,  如果出现'couldn't load packages due to errors' 说明go_guru_scope包中有错误
+" 查看函数调用位置 ,  显示所选函数调用的可能目标
+map <leader>1 :GoCallees<CR>
+" 显示所选功能的可能调用者
+map <leader>2 :GoCallers<CR>
+" 查看函数调用完整调用栈 相当于debug栈, 过程可能较慢
+map <leader>4 :GoCallstack<CR>
+
 
 
 
