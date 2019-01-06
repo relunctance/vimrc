@@ -369,3 +369,10 @@ map <leader>s vi{:sort<cr>
 "autocmd FileType vue
 "au BufRead,BufNewFile *.vue set filetype=vue
 "autocmd FileType vue nnoremap  ff :call Hello()<CR>
+
+
+"扩展和延伸窗口大小
+nmap <leader><Up> :resize +20<CR>
+nmap <leader><Down> :resize -20<CR>
+nmap <leader><Right> :vertical resize +20<CR>
+nmap <leader><Left> :vertical resize -20<CR>
