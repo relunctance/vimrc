@@ -315,6 +315,7 @@ let g:go_term_width=35
 
 let g:go_info_mode = 'gocode'
 let g:go_def_mode = 'guru'
+" 注意: 这里不要绝对路径, 必须使用gopath/src中的路径 , 否则报错 vim-go: guru: file xxx.go not found in loaded program
 let g:go_guru_scope = ['github.com/dgraph-io/dgraph/...']
 " 查看函数会用在什么地方 , 相当于grep查找
 map <leader>3 :GoReferrers<CR>
