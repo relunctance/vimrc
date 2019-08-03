@@ -390,3 +390,12 @@ nmap <leader><Up> :resize +20<CR>
 nmap <leader><Down> :resize -20<CR>
 nmap <leader><Right> :vertical resize +20<CR>
 nmap <leader><Left> :vertical resize -20<CR>
+
+
+
+" 解决mac无法复制内容到剪切板问题
+
+" mac ctrl+c复制
+" vmap <C-c> :w !pbcopy<CR><CR>
+" mac ctrl+v粘贴 , 此命令与command+v一样 所以可以忽略
+" nmap <C-v> :r !pbpaste<CR><CR>
