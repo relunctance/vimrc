@@ -295,7 +295,7 @@ map <leader>r :w<CR>:GoRun<CR>
 map <leader>z :GoImports<CR>
 "godef gd 右边新窗口打开
 "let g:godef_split=2
-let g:godef_command = "~/usr/local/go/bin/godef"
+"let g:godef_command = '~/usr/local/go/bin/godef'
 "已修改go-def源码
 "gd 左侧窗口打开
 "gs 新窗口打开
