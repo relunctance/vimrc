@@ -242,6 +242,8 @@ Plugin 'fatih/vim-go'
 Plugin 'godlygeek/tabular'
 "替换vim-go中快捷键, gd左侧打开源码, gs 新窗口打开源码
 Plugin 'relunctance/vim-godef'
+" 定义gt 执行go 函数单元测试
+Plugin 'relunctance/vim-gotestfunc'
 Plugin 'majutsushi/tagbar'
 Plugin 'Valloric/YouCompleteMe'
 
