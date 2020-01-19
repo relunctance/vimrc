@@ -239,10 +239,14 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'fatih/vim-go'
 Plugin 'godlygeek/tabular'
-Plugin 'dgryski/vim-godef'
-Plugin 'Blackrush/vim-gocode'
 Plugin 'majutsushi/tagbar'
 Plugin 'Valloric/YouCompleteMe'
+
+" 重新定义gd , 新增gs 查看源码
+Plugin 'relunctance/vim-godef'
+" 定义gt 执行go 函数单元测试
+Plugin 'relunctance/vim-gotestfunc'
+
 "React
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
