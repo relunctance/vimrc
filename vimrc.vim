@@ -312,9 +312,10 @@ let s:licenseTag = s:licenseTag . "Foundation, Inc., 59 Temple Place - Suite 330
 
 "DoxygenToolkit 注释调用 f1 (键盘f建+1建)
 "注释函数
-map f1 :Dox<CR><ESC>
+map f1 [[:Dox<CR><ESC>
 "License
 map f2 gg:DoxLic<ESC>
+
 
 
 
