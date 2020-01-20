@@ -249,6 +249,8 @@ Plugin 'Valloric/YouCompleteMe'
 
 "超级注释插件
 Plugin 'tpope/vim-commentary'
+Plugin 'vim-scripts/DoxygenToolkit.vim'
+
 call vundle#end() 
 "filetype plugin indent on
 filetype plugin indent on
@@ -264,6 +266,41 @@ autocmd FileType python,shell,coffee set commentstring=#\ %s
 autocmd FileType java,php,go,c,cpp set commentstring=//\ %s
 
 
+
+""""""""""""""""""""""DoxygenToolkit golang 注释配置 """""""""""""""""""""""""""""""""""""
+
+let g:DoxygenToolkit_briefTag_funcName = "yes"
+let g:DoxygenToolkit_startCommentTag = "// "
+let g:DoxygenToolkit_startCommentBlock = "// "
+let g:DoxygenToolkit_interCommentBlock = "// "
+let g:DoxygenToolkit_interCommentTag = "// "
+let g:DoxygenToolkit_endCommentTag = "// "
+let g:DoxygenToolkit_endCommentBlock = "// "
+let g:DoxygenToolkit_compactDoc = "no"
+let g:DoxygenToolkit_briefTag_pre=""
+let g:DoxygenToolkit_paramTag_pre=""
+let g:DoxygenToolkit_returnTag="return"
+let g:DoxygenToolkit_python_autoRemoveSelfParam="no"
+let g:DoxygenToolkit_python_autoFunctionReturn="no"
+let g:DoxygenToolkit_authorName="gaoqilin"
+let s:licenseTag = "Copyright (C) \<enter>\<enter>"
+let s:licenseTag = s:licenseTag . "This program is free software; you can redistribute it and/or\<enter>"
+let s:licenseTag = s:licenseTag . "modify it under the terms of the GNU General Public License\<enter>"
+let s:licenseTag = s:licenseTag . "as published by the Free Software Foundation; either version 2\<enter>"
+let s:licenseTag = s:licenseTag . "of the License, or (at your option) any later version.\<enter>\<enter>"
+let s:licenseTag = s:licenseTag . "This program is distributed in the hope that it will be useful,\<enter>"
+let s:licenseTag = s:licenseTag . "but WITHOUT ANY WARRANTY; without even the implied warranty of\<enter>"
+let s:licenseTag = s:licenseTag . "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\<enter>"
+let s:licenseTag = s:licenseTag . "GNU General Public License for more details.\<enter>\<enter>"
+let s:licenseTag = s:licenseTag . "You should have received a copy of the GNU General Public License\<enter>"
+let s:licenseTag = s:licenseTag . "along with this program; if not, write to the Free Software\<enter>"
+let s:licenseTag = s:licenseTag . "Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.\<enter>"
+
+"DoxygenToolkit 注释调用 f1 (键盘f建+1建)
+"注释函数
+map f1 [[:Dox<CR><ESC>
+"License
+map f2 gg:DoxLic<ESC>
 
 " Tag list (tagbar)
 " 
