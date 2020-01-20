@@ -264,6 +264,7 @@ Plugin 'relunctance/govim-find-func'
 
 "超级注释插件
 Plugin 'tpope/vim-commentary'
+Plugin 'vim-scripts/DoxygenToolkit.vim'
 call vundle#end() 
 filetype plugin indent on
 
