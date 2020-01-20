@@ -209,7 +209,7 @@ nmap <C-V> :r $HOME/.vim/.vimxfer<CR>
 vmap <C-V> c<ESC>:r $HOME/.vim/.vimxfer<CR>
 
 "必须在可视模式下复制
-"vmap <C-C> :w! $HOME/.vim/.vimxfer<CR>
+vmap <C-C> :w! $HOME/.vim/.vimxfer<CR>
 "实现ctrl+x 剪切 , 利用vim书签来做
 vmap <C-X> ma:w! $HOME/.vim/.vimxfer<CR>V'ad
 
