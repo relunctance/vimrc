@@ -413,14 +413,20 @@ map <leader>4 :GoCallstack<CR>
 imap <C-L> <C-X><C-O>
 "inoremap <c-o> <c-x><c-o>
 
-let g:ycm_server_python_interpreter='/home/gaoqilin/usr/local/bin/python'
+let g:ycm_server_python_interpreter='/usr/bin/python3'
 ""寻找全局配置文件
-let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
+"let g:ycm_global_ycm_extra_conf="~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
+" 注意 注意 注意 新版go-vim不能使用绝对路径
+" 使用guru后, godef正常, YouCompleteMe失败
+" 注意 注意 注意g:go_def_mode='gopls' 性能更好, 否则gd|gs性能很差 
+" 注意: 这里不要绝对路径, 必须使用gopath/src中的路径 , 否则报错 vim-go: guru: file xxx.go not found in loaded program
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
 set completeopt=longest,menu
 
-map <leader>d :call GoVimFindWord()<CR>
+"map <leader>d :call GoVimFindWord()<CR>
 " 检索项目目录
-let g:govim_find_func_path="~/web/"
+"let g:govim_find_func_path="~/web/"
 
 " css排序强迫症
 map <leader>s vi{:sort<cr>
