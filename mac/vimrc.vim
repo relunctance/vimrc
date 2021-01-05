@@ -1,4 +1,4 @@
-" 1.检测/usr/bin/ctags是否存在,如果不存在yum -y install ctags.x86_64
+" 1.检测/usr/bin/ctags是否存在,如果不存在brew install ctags
 " 2.创建C-C , C-X , C-V 复制,粘贴,剪切临时文件: touch  ~/.vim/.vimxfer
 
 "设置字体
@@ -320,7 +320,7 @@ map <leader>r :w<CR>:GoRun<CR>
 
 "定义,r :GoDoc 打开帮助文档
 map <leader>z :GoImports<CR>
-"godef gd 右边新窗口打开
+" gd 右边新窗口打开
 "let g:godef_command = '/usr/local/bin/go/godef'
 "已修改go-def源码
 "gd 左侧窗口打开
@@ -398,7 +398,9 @@ let g:ycm_server_python_interpreter='/usr/local/bin/python3'
 "let g:ycm_use_clangd = 0
 ""寻找全局配置文件
 let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py"
-" 新版go-vim不能使用绝对路径
+" 注意 注意 注意 新版go-vim不能使用绝对路径
+" 使用guru后, godef正常, YouCompleteMe失败
+" 注意 注意 注意g:go_def_mode='gopls' 性能比guru更好, 否则gd|gs性能很差 
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
 let g:ycm_log_level = 'debug'
