@@ -349,7 +349,10 @@ let g:godef_split=3
 " GoImplements 高度和宽度
 let g:go_term_mode = "vsplit"
 let g:go_term_height=30
-let g:go_list_height = 20
+" g:go_list_height如果语法报错 , 能控制报错区域高度 , mac下得设置小一点, 5即可 by gaoqilin 2022-12-13 19:54:22
+let g:go_list_height = 5
+" let g:go_list_height = 20
+
 " quickfix , locationlist
 let g:go_list_type = "locationlist"
 "定义,q 执行:GoImplements，显示当前类型实现的interface列表和实现的类情况
