@@ -262,6 +262,11 @@ Plugin 'git@github.com:relunctance/vimrc.git'
 " 项目中字符或者函数名查找
 Plugin 'relunctance/govim-find-func'
 
+"colors
+Plugin 'bluz71/vim-nightfly-colors'
+" 黑色主题下, 比较合适
+Plugin 'joshdick/onedark.vim'  
+
 "超级注释插件
 Plugin 'tpope/vim-commentary'
 Plugin 'vim-scripts/DoxygenToolkit.vim'
