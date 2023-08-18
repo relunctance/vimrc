@@ -462,10 +462,6 @@ nmap <leader><Left> :vertical resize -20<CR>
 " mac ctrl+v粘贴 , 此命令与command+v一样 所以可以忽略
 " nmap <C-v> :r !pbpaste<CR><CR>
 
-set background=dark
-Plugin 'joshdick/onedark'
-Plugin 'tomasr/molokai'
-Plugin 'morhetz/gruvbox'
 
 "颜色方案
 "colorscheme   desert
