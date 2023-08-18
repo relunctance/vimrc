@@ -51,13 +51,6 @@ set fileencodings=ucs-bom,utf-8,chinese,cp936
 
 
 
-"颜色方案
-"colorscheme   desert
-colorscheme  peachpuff
-"colorscheme  molokai
-"colorscheme  ron
-"colorscheme  default
-"colorscheme  delek
 
 "自动缩进
 "set autoindent 
@@ -468,3 +461,20 @@ nmap <leader><Left> :vertical resize -20<CR>
 " vmap <C-c> :w !pbcopy<CR><CR>
 " mac ctrl+v粘贴 , 此命令与command+v一样 所以可以忽略
 " nmap <C-v> :r !pbpaste<CR><CR>
+
+set background=dark
+Plugin 'joshdick/onedark'
+Plugin 'tomasr/molokai'
+Plugin 'morhetz/gruvbox'
+
+"颜色方案
+"colorscheme   desert
+"colorscheme  peachpuff
+"colorscheme  molokai
+colorscheme  onedark
+"colorscheme  gruvbox
+"colorscheme  solarized
+"colorscheme  ron
+"colorscheme  default
+"colorscheme  delek
+
