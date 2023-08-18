@@ -242,6 +242,11 @@ Plugin 'godlygeek/tabular'
 Plugin 'majutsushi/tagbar'
 Plugin 'Valloric/YouCompleteMe'
 
+" c++ 语法高亮
+Plugin 'morhetz/gruvbox'
+" 浮窗工具
+Plugin 'voldikss/vim-floaterm'
+
 " 重新定义gd , 新增gs 查看源码
 Plugin 'relunctance/vim-godef'
 " 定义gt 执行go 函数单元测试
