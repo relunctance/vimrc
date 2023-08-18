@@ -239,6 +239,11 @@ Plugin 'godlygeek/tabular'
 Plugin 'bluz71/vim-nightfly-colors'
 Plugin 'joshdick/onedark.vim'
 
+" c++ 语法高亮
+Plugin 'morhetz/gruvbox'
+" 浮窗工具
+Plugin 'voldikss/vim-floaterm'
+
 "替换vim-go中快捷键, gd左侧打开源码, gs 新窗口打开源码
 Plugin 'relunctance/vim-godef'
 Plugin 'relunctance/gotestfunc'
