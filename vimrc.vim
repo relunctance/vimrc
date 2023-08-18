@@ -242,8 +242,13 @@ Plugin 'godlygeek/tabular'
 Plugin 'majutsushi/tagbar'
 Plugin 'Valloric/YouCompleteMe'
 
-" c++ 语法高亮
+" 语法高亮
 Plugin 'morhetz/gruvbox'
+Plugin 'joshdick/onedark'
+Plugin 'tomasr/molokai'
+" 适合c++语法高亮
+Plugin 'altercation/vim-colors-solarized'
+
 " 浮窗工具
 Plugin 'voldikss/vim-floaterm'
 
