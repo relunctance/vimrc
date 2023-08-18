@@ -467,8 +467,9 @@ nmap <leader><Left> :vertical resize -20<CR>
 "colorscheme   desert
 "colorscheme  peachpuff
 "colorscheme  molokai
-colorscheme  onedark
-"colorscheme  gruvbox
+"colorscheme  onedark
+" 适合c++
+colorscheme  gruvbox
 "colorscheme  solarized
 "colorscheme  ron
 "colorscheme  default
