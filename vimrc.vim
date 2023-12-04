@@ -1,6 +1,15 @@
 " 1.检测/usr/bin/ctags是否存在,如果不存在yum -y install ctags.x86_64
 " 2.创建C-C , C-X , C-V 复制,粘贴,剪切临时文件: touch  ~/.vim/.vimxfer
 
+"表示不需要备份文件
+set nobackup 
+"表示不创建临时交换文件
+set noswapfile 
+"表示编辑的时候不需要备份文件
+set nowritebackup 
+"表示不创建撤销文件
+set noundofile 
+
 "设置字体
 set guifont=Consolas:h12:cANSI
 
