@@ -30,6 +30,7 @@ set backspace=indent,eol,start
 syntax on
 
 
+
 "设置命令历史记录为10条. 
 set history=100          
  
@@ -159,7 +160,7 @@ nmap <silent> <leader>q f{v%zf
 
 
 "补全HTML标签
-nmap <silent> <leader>e yiwh%a</><ESC>Pl%i
+"nmap <silent> <leader>e yiwh%a</><ESC>Pl%i
 
 
 
@@ -243,6 +244,8 @@ Plugin 'fatih/vim-go'
 Plugin 'godlygeek/tabular'
 Plugin 'majutsushi/tagbar'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'preservim/nerdtree'
+
 
 " 语法高亮
 Plugin 'morhetz/gruvbox'
@@ -435,7 +438,7 @@ imap <C-L> <C-X><C-O>
 
 let g:ycm_server_python_interpreter='/usr/bin/python3'
 ""寻找全局配置文件
-"let g:ycm_global_ycm_extra_conf="~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
+let g:ycm_global_ycm_extra_conf="~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
 " 注意 注意 注意 新版go-vim不能使用绝对路径
 " 使用guru后, godef正常, YouCompleteMe失败
 " 注意 注意 注意g:go_def_mode='gopls' 性能更好, 否则gd|gs性能很差 
@@ -449,7 +452,7 @@ set completeopt=longest,menu
 "let g:govim_find_func_path="~/web/"
 
 " css排序强迫症
-map <leader>s vi{:sort<cr>
+"map <leader>s vi{:sort<cr>
 
 "autocmd FileType vue
 "au BufRead,BufNewFile *.vue set filetype=vue
@@ -463,6 +466,14 @@ nmap <leader><Right> :vertical resize +20<CR>
 nmap <leader><Left> :vertical resize -20<CR>
 
 
+"nmap gd :GoReferrers<CR>
+nnoremap <leader>s :GoReferrers<CR>
+
+"高亮并跳转到下一个
+nnoremap <leader>d *<CR>         
+" 清除高亮
+nnoremap <leader>e :nohlsearch<CR> 
+
 
 " 解决mac无法复制内容到剪切板问题
 
@@ -470,6 +481,10 @@ nmap <leader><Left> :vertical resize -20<CR>
 " vmap <C-c> :w !pbcopy<CR><CR>
 " mac ctrl+v粘贴 , 此命令与command+v一样 所以可以忽略
 " nmap <C-v> :r !pbpaste<CR><CR>
+
+set background=light
+let g:gruvbox_contrast_light = 'soft'  " soft, medium, hard
+
 
 
 "颜色方案
